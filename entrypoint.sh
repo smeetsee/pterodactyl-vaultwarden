@@ -10,5 +10,8 @@ mkdir -p /home/container/data
 # Make the server run on the allocated port
 export ROCKET_PORT=$SERVER_PORT
 
-# Run the Server
-${MODIFIED_STARTUP}
+# Run the Server in the background
+${MODIFIED_STARTUP} &
+
+# Allow running shell commands
+bash
