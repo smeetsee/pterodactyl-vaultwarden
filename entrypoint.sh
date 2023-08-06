@@ -14,4 +14,5 @@ export ROCKET_PORT=$SERVER_PORT
 ${MODIFIED_STARTUP} &
 
 # Allow running shell commands
+cd /home/container
 bash
