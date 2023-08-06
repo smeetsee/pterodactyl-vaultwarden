@@ -5,4 +5,4 @@ RUN rm -rf /data && ln -s /home/container/data /
 
 ENV DATABASE_URL=/home/container/data/db.sqlite3
 
-CMD ["/start.sh"]
+CMD ["/bin/sh", "-c", "mkdir -p /home/container/data && /start.sh"]
